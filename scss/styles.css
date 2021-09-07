@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-:root {
-  font-family: 'Roboto', sans-serif;
+@media (max-width: 1000px) {
+  html {
+    font-size: calc(12px + .4vw);
+  }
 }
 
-p {
-  margin: 0;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
-  margin: 0;
 }
 
 h1 {
@@ -31,9 +32,15 @@ a:link {
 }
 
 html {
-  font-size: 100%;
+  font-size: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: calc(12px + .4vw);
+  }
 }
 
 *,
@@ -43,7 +50,11 @@ html {
           box-sizing: inherit;
 }
 
-body {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
