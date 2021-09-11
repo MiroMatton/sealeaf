@@ -71,7 +71,6 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 1em;
 }
 
 nav ul {
@@ -129,8 +128,7 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #fff;
-    top: -1rem;
+    background: #fff;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -139,8 +137,6 @@ nav ul li a:hover {
             justify-content: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .nav-menu.active {
     right: 0;
@@ -306,33 +302,33 @@ nav ul li a:hover {
 }
 
 .grid div {
+  position: relative;
   aspect-ratio: 1;
   background: url(../img/samphire.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*
-    &:hover {
-      &::after {
-        opacity: 1;
-      }
-    }
+  text-align: center;
+}
 
-    &:hover::after {
-      &::after {
-        opacity: 0;
-      }
-    }
+.grid div:hover {
+  background: #61bb46;
+}
 
-    &::after {
-      content: "zeekraal";
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: $green;
-      opacity: 0;
-    }
-    */
+.grid div:hover h3 {
+  opacity: 1;
+}
+
+.grid div h3 {
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 @media (max-width: 700px) {
