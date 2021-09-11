@@ -266,7 +266,7 @@ nav {
     background-size: cover;
     text-align: center;
 
-    &:hover {
+    &:hover, &:active {
       background: $green;
       h3 {
         opacity: 1;

@@ -311,11 +311,11 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.grid div:hover {
+.grid div:hover, .grid div:active {
   background: #61bb46;
 }
 
-.grid div:hover h3 {
+.grid div:hover h3, .grid div:active h3 {
   opacity: 1;
 }
 
