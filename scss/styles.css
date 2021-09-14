@@ -293,10 +293,10 @@ nav ul li a:hover {
 .grid {
   display: -ms-grid;
   display: grid;
-  padding: 1rem;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2.5em;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2.5em;
+  padding: 2.5em;
   background: rgba(97, 187, 70, 0.2);
   border-radius: 5px;
 }
@@ -329,13 +329,6 @@ nav ul li a:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
-}
-
-@media (max-width: 700px) {
-  .grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
 }
 
 #OverOns {
@@ -382,8 +375,8 @@ nav ul li a:hover {
 }
 
 #Gerechten .grid {
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   background: white;
 }
 
