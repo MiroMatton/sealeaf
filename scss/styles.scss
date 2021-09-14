@@ -257,14 +257,22 @@ nav {
   padding: 2.5em;
   background: $lightGreen;
   border-radius: 5px;
+
   div {
     position: relative;
-    aspect-ratio: 1;
     background: url(../img/samphire.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 0;
+      width: 0;
+      padding-top: 100%;
+    }
 
     &:hover, &:active {
       background: $green;
