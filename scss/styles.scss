@@ -508,15 +508,24 @@ input, textarea {
     }
 
     a {
+      display: flex;
+      align-items: center;
       color: #000;
       margin-bottom: 0.5rem;
       transition: 0.3 ease-out;
+
+      svg {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 0.3em;
+      }
 
       &:hover {
           color: #1f1f1f;
           transition: 0.3 ease-out;
       }
-    }
+    } 
+      
   }
   
   .footerInfo {
@@ -526,7 +535,7 @@ input, textarea {
   }
 
   .footerLogo {
-    width: 15%;
+    width: 15em;
 
     img {
       width: 100%;
