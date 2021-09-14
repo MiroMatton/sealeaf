@@ -231,7 +231,7 @@ nav ul li a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .features div {
@@ -294,7 +294,8 @@ nav ul li a:hover {
   display: -ms-grid;
   display: grid;
   padding: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr,1fr,1fr,1fr;
+      grid-template-columns: 1fr,1fr,1fr,1fr;
   gap: 2.5em;
   background: rgba(97, 187, 70, 0.2);
   border-radius: 5px;
@@ -332,7 +333,8 @@ nav ul li a:hover {
 
 @media (max-width: 700px) {
   .grid {
-      grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr,1fr;
+        grid-template-columns: 1fr,1fr;
   }
 }
 
@@ -380,7 +382,8 @@ nav ul li a:hover {
 }
 
 #Gerechten .grid {
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr,1fr,1fr;
+      grid-template-columns: 1fr,1fr,1fr;
   background: white;
 }
 

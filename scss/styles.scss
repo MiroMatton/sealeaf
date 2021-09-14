@@ -253,7 +253,7 @@ nav {
 .grid {
  display: grid;
  padding: 1rem;
- grid-template-columns: repeat(4, 1fr);
+ grid-template-columns: 1fr,1fr,1fr,1fr;
  gap: 2.5em;
  background: $lightGreen;
  border-radius: 5px;
@@ -286,7 +286,7 @@ nav {
   }
 
   @media (max-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr,1fr;
   }
 }
 
@@ -330,7 +330,7 @@ nav {
   text-align: center;
 
   .grid{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr,1fr,1fr;
     background: white;
     div {
       background: url(../img/insta.jpg);
