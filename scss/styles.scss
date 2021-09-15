@@ -62,6 +62,7 @@ nav {
 
 .hamburger {
   display: none;
+  margin: 1rem;
 }
 
 .bar {
@@ -354,10 +355,10 @@ nav {
 
 .collection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5em;
   grid-auto-rows: 15rem;
-  padding: 2.5em 0;
+  padding: 2.5em;
   div {
     position: relative;
     background-image: url("../img/package.png");

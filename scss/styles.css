@@ -95,6 +95,7 @@ nav ul li a:hover {
 
 .hamburger {
   display: none;
+  margin: 1rem;
 }
 
 .bar {
@@ -402,11 +403,11 @@ nav ul li a:hover {
 .collection {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5em;
   grid-auto-rows: 15rem;
-  padding: 2.5em 0;
+  padding: 2.5em;
 }
 
 .collection div {
