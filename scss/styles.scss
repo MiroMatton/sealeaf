@@ -72,7 +72,7 @@ nav {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: black;
 }
 
 .button {
@@ -175,17 +175,21 @@ nav {
 .title {
   width: 50%;
 
+  h1.blue {
+    color: $blue;
+  }
+
+  h1.green {
+    color: $green;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 0.75em;
+  }
+
   p {
     font-weight: 300;
     line-height: 1.5rem;
   }
-}
-
-.green {
-  color: $green;
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 0.75em;
 }
 
 .features {
@@ -200,7 +204,7 @@ nav {
 // teelt
 
 #Teelt {
-  background-image: url("../img/farm.png");
+  background-image: url("../img/SeaLeaf-8921.jpg");
   text-align: center;
   background-attachment: fixed;
   background-position: center;
@@ -261,11 +265,8 @@ nav {
 
   div {
     position: relative;
-    background: url(../img/samphire.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     text-align: center;
+    background: white;
 
     &::before {
       content: "";
@@ -275,12 +276,7 @@ nav {
       padding-top: 100%;
     }
 
-    &:hover, &:active {
-      background: $green;
-      h3 {
-        opacity: 1;
-      }
-    }
+    
 
     h3 {
       color: white;
@@ -291,6 +287,47 @@ nav {
       margin-right: -50%;
       transform: translate(-50%, -50%);
       opacity: 0;
+    }
+  }
+  div#Zeekraal {
+    background: url(../img/SeaLeaf-09969.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover, &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
+
+  div#Lamsoor {
+    background: url(../img/SeaLeaf-09962.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover, &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
+
+  div#Lepelblad {
+    background: url(../img/SeaLeaf-09964.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover, &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
     }
   }
 }
@@ -361,23 +398,35 @@ nav {
   padding: 2.5em;
   div {
     position: relative;
-    background-image: url("../img/package.png");
-    background-size: cover;
     border-radius: 5px;
- }
+    div.imageText {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-radius: 5px;
+      text-align: left;
+      width: 97.5%;
+      margin: 1em auto 0.25em;
+      height: auto;
+    }
+  }
 }
 
-#klein {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  border-radius: 5px;
-  text-align: left;
-  width: 97.5%;
-  margin: 1em auto 0.25em;
-  height: auto;
+div#Klein {
+  background-image: url("../img/SeaLeaf-09985.jpg");
+  background-size: cover;
+}
+
+div#Groot {
+  background-image: url("../img/SeaLeaf-09991.jpg");
+  background-size: cover;
+}
+
+div#Plant {
+  background-image: url("../img/SeaLeaf-09856.jpg");
+  background-size: cover;
 }
 
 // contact

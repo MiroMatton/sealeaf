@@ -105,7 +105,7 @@ nav ul li a:hover {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: black;
 }
 
 .button {
@@ -216,16 +216,20 @@ nav ul li a:hover {
   width: 50%;
 }
 
-.title p {
-  font-weight: 300;
-  line-height: 1.5rem;
+.title h1.blue {
+  color: #00a0ac;
 }
 
-.green {
+.title h1.green {
   color: #61bb46;
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 0.75em;
+}
+
+.title p {
+  font-weight: 300;
+  line-height: 1.5rem;
 }
 
 .features {
@@ -240,7 +244,7 @@ nav ul li a:hover {
 }
 
 #Teelt {
-  background-image: url("../img/farm.png");
+  background-image: url("../img/SeaLeaf-8921.jpg");
   text-align: center;
   background-attachment: fixed;
   background-position: center;
@@ -304,11 +308,8 @@ nav ul li a:hover {
 
 .grid div {
   position: relative;
-  background: url(../img/samphire.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
+  background: white;
 }
 
 .grid div::before {
@@ -317,14 +318,6 @@ nav ul li a:hover {
   height: 0;
   width: 0;
   padding-top: 100%;
-}
-
-.grid div:hover, .grid div:active {
-  background: #61bb46;
-}
-
-.grid div:hover h3, .grid div:active h3 {
-  opacity: 1;
 }
 
 .grid div h3 {
@@ -337,6 +330,51 @@ nav ul li a:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
+}
+
+.grid div#Zeekraal {
+  background: url(../img/SeaLeaf-09969.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid div#Zeekraal:hover, .grid div#Zeekraal:active {
+  background: #61bb46;
+}
+
+.grid div#Zeekraal:hover h3, .grid div#Zeekraal:active h3 {
+  opacity: 1;
+}
+
+.grid div#Lamsoor {
+  background: url(../img/SeaLeaf-09962.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid div#Lamsoor:hover, .grid div#Lamsoor:active {
+  background: #61bb46;
+}
+
+.grid div#Lamsoor:hover h3, .grid div#Lamsoor:active h3 {
+  opacity: 1;
+}
+
+.grid div#Lepelblad {
+  background: url(../img/SeaLeaf-09964.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid div#Lepelblad:hover, .grid div#Lepelblad:active {
+  background: #61bb46;
+}
+
+.grid div#Lepelblad:hover h3, .grid div#Lepelblad:active h3 {
+  opacity: 1;
 }
 
 #OverOns {
@@ -412,12 +450,10 @@ nav ul li a:hover {
 
 .collection div {
   position: relative;
-  background-image: url("../img/package.png");
-  background-size: cover;
   border-radius: 5px;
 }
 
-#klein {
+.collection div div.imageText {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -428,6 +464,21 @@ nav ul li a:hover {
   width: 97.5%;
   margin: 1em auto 0.25em;
   height: auto;
+}
+
+div#Klein {
+  background-image: url("../img/SeaLeaf-09985.jpg");
+  background-size: cover;
+}
+
+div#Groot {
+  background-image: url("../img/SeaLeaf-09991.jpg");
+  background-size: cover;
+}
+
+div#Plant {
+  background-image: url("../img/SeaLeaf-09856.jpg");
+  background-size: cover;
 }
 
 #Contact {
