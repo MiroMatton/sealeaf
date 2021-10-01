@@ -34,7 +34,7 @@ html {
 
 @media (max-width: 1000px) {
   html {
-    font-size: calc(12px + .4vw);
+    font-size: calc(12px + 0.4vw);
   }
 }
 
@@ -192,7 +192,8 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .logo, .container .title {
+  .container .logo,
+  .container .title {
     width: 90%;
     margin: 1em auto;
   }
@@ -243,18 +244,24 @@ nav ul li a:hover {
   text-align: center;
 }
 
-#Teelt {
-  background-image: url("../img/SeaLeaf-8921.jpg");
-  text-align: center;
-  background-attachment: fixed;
+.gallery-cell {
+  width: 100%;
+  height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: table;
 }
 
-.white {
+.gallery-cell h2 {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
   color: white;
-  padding: 2em;
+}
+
+.flickity-page-dots {
+  display: none;
 }
 
 .underline {
@@ -265,7 +272,7 @@ nav ul li a:hover {
 
 .underline:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 4px;
   bottom: -10px;
   margin: 0rem auto;
@@ -280,7 +287,7 @@ nav ul li a:hover {
 }
 
 .linear:after {
-  background: linear-gradient(268.89deg, #61BB46 -9.51%, #00A0AC 90.49%);
+  background: linear-gradient(268.89deg, #61bb46 -9.51%, #00a0ac 90.49%);
 }
 
 #Producten {
@@ -412,7 +419,7 @@ nav ul li a:hover {
   margin: 1em 2rem;
   text-align: left;
   width: 40%;
-  line-height: 1,5em;
+  line-height: 1, 5em;
   letter-spacing: 0.05em;
 }
 
@@ -482,7 +489,7 @@ div#Plant {
 }
 
 #Contact {
-  background: linear-gradient(268.89deg, #61BB46 -9.51%, #00A0AC 90.49%);
+  background: linear-gradient(268.89deg, #61bb46 -9.51%, #00a0ac 90.49%);
   color: white;
 }
 
@@ -527,7 +534,8 @@ div#Plant {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #Contact .wrapper .form #gegevens #name, #Contact .wrapper .form #gegevens #email {
+  #Contact .wrapper .form #gegevens #name,
+  #Contact .wrapper .form #gegevens #email {
     width: 100%;
     margin-left: 0;
   }
@@ -548,7 +556,8 @@ div#Plant {
   margin-left: 2rem;
 }
 
-input, textarea {
+input,
+textarea {
   margin: 10px 0;
   background: transparent;
   border: none;
@@ -560,19 +569,23 @@ input, textarea {
   resize: vertical;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: white;
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   color: white;
 }
 
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
   color: white;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: white;
 }
 
