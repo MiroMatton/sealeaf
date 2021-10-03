@@ -4,6 +4,7 @@
 
 // global variables
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   @media (max-width: 1000px) {
     font-size: calc(12px + 0.4vw);
@@ -250,6 +251,12 @@ nav {
   background: $blue;
 }
 
+.white:after {
+  background: white;
+  width: 60%;
+  height: 3px;
+}
+
 .linear:after {
   background: linear-gradient(268.89deg, #61bb46 -9.51%, #00a0ac 90.49%);
 }
@@ -393,9 +400,9 @@ nav {
   }
 }
 
-// verkoop
+// verpakking
 
-#Verkoop {
+#Verpakking {
   text-align: center;
   background-color: $lightBlue;
 }
@@ -420,6 +427,7 @@ nav {
       width: 97.5%;
       margin: 1em auto 0.25em;
       height: auto;
+      padding: 0.25em;
     }
   }
 }

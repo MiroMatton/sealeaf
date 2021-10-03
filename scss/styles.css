@@ -28,6 +28,7 @@ a:active a:link {
 }
 
 html {
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -287,6 +288,12 @@ nav ul li a:hover {
   background: #00a0ac;
 }
 
+.white:after {
+  background: white;
+  width: 60%;
+  height: 3px;
+}
+
 .linear:after {
   background: linear-gradient(268.89deg, #61bb46 -9.51%, #00a0ac 90.49%);
 }
@@ -441,7 +448,7 @@ nav ul li a:hover {
   background-size: cover;
 }
 
-#Verkoop {
+#Verpakking {
   text-align: center;
   background-color: rgba(0, 160, 172, 0.2);
 }
@@ -472,6 +479,7 @@ nav ul li a:hover {
   width: 97.5%;
   margin: 1em auto 0.25em;
   height: auto;
+  padding: 0.25em;
 }
 
 div#Klein {
