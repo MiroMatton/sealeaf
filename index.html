@@ -7,9 +7,6 @@
     <title>sealeaf</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="scss/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-</head>
 <body>
     <header class="wrapper">
       <nav>
@@ -194,10 +191,10 @@
       </section>
       <section id="Teelt">
         <div class="gallery js-flickity">
-          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-8921.jpg);"><h2>Vrolijke plantjes opgegroeid in perfecte omstandigheden</h2></div>
-          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-00001.jpg);"><h2>Puur natuur, zonder bestrijdingsmiddelen en zo zuiver voor gebruik</h2></div>
-          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-09856.jpg);"><h2>Zeezout zorgt voor de zilte toets</h2></div>
-          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-8959.jpg);"><h2>Omdat we geloven dat alles beter én lekkerder kan</h2></div>
+          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-8921.jpg);"><h3>Vrolijke plantjes opgegroeid in perfecte omstandigheden</h3></div>
+          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-00001.jpg);"><h3>Puur natuur, zonder bestrijdingsmiddelen en zo zuiver voor gebruik</h3></div>
+          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-09856.jpg);"><h3>Zeezout zorgt voor de zilte toets</h3></div>
+          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-8959.jpg);"><h3>Omdat we geloven dat alles beter én lekkerder kan</h3></div>
         </div>  
       </section>
       <section id="Producten" class="wrapper">
@@ -310,12 +307,12 @@
             <p>Geinteresseerd? contacteer ons</p>
           </div>
           <div class="form">
-            <form>
+            <form action="https://formsubmit.co/miromatton@gmail.com" method="POST">
               <div id="gegevens">
-                <input id="name" name="name" type="text" placeholder="naam">
-                <input id="email" name="email" type="email" placeholder="E-mail">
+                <input id="name" name="name" type="text" placeholder="naam" required>
+                <input id="email" name="email" type="email" placeholder="E-mail" required>
               </div>
-              <textarea placeholder="message" name="msg" id="msg" rows="1s"></textarea>
+              <textarea placeholder="message" name="msg" id="msg" rows="1s" required></textarea>
               <button class="submit" type="submit">submit</button>
             </form>
           </div>
@@ -328,12 +325,12 @@
       </div>
       <div class="footerInfo">
         <div class="column">
-          <h3>Company</h3>
-          <a href="/">Over ons</a>
-          <a href="/">Producten</a>
-          <a href="/">Teelt</a> 
-          <a href="/">Gerechten</a>
-          <a href="/">Verkoop</a>
+          <h3>Sections</h3>
+          <a class="nav-link" data-section="Teelt" href="#Teelt">Teelt</a>
+          <a class="nav-link" data-section="Producten" href="#Producten">Producten</a>
+          <a class="nav-link" data-section="OverOns" href="#OverOns">Over ons</a>
+          <a class="nav-link" data-section="Gerechten" href="#Gerechten">Gerechten</a>
+          <a class="nav-link" data-section="Verkoop" href="#Verkoop">Verkoop</a>
         </div>
         <div class="column">
           <h3>Socials</h3>
@@ -347,6 +344,7 @@
         </div>
       </div>
     </footer>
-</body>
 <script src="https://miromatton.github.io/sealeaf/main.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
 </html>

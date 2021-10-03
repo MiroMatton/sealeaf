@@ -1,8 +1,8 @@
 @import "colors"; // colors variables
 @import "typography";
+@import url("https://unpkg.com/flickity@2/dist/flickity.min.css");
 
 // global variables
-
 html {
   box-sizing: border-box;
   @media (max-width: 1000px) {
@@ -210,11 +210,15 @@ nav {
   background-size: cover;
   display: table;
 
-  h2 {
+  h3 {
+    font-size: 2rem;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
     color: white;
+
+    @media screen {
+    }
   }
 }
 
