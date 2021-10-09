@@ -210,7 +210,7 @@ nav ul li a:hover {
 }
 
 .logo h3 {
-  color: #61bb46;
+  color: #80b23e;
   font-size: 1.5rem;
 }
 
@@ -223,7 +223,7 @@ nav ul li a:hover {
 }
 
 .title h1.green {
-  color: #61bb46;
+  color: #80b23e;
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 0.75em;
@@ -281,7 +281,7 @@ nav ul li a:hover {
   left: 0;
   right: 0;
   width: 10%;
-  background: #61bb46;
+  background: #80b23e;
 }
 
 .blue:after {
@@ -303,7 +303,7 @@ nav ul li a:hover {
 }
 
 #Producten span {
-  color: #61bb46;
+  color: #80b23e;
 }
 
 #Producten p {
@@ -355,7 +355,7 @@ nav ul li a:hover {
 }
 
 .grid div#Zeekraal:hover, .grid div#Zeekraal:active {
-  background: #61bb46;
+  background: #80b23e;
 }
 
 .grid div#Zeekraal:hover h3, .grid div#Zeekraal:active h3 {
@@ -370,7 +370,7 @@ nav ul li a:hover {
 }
 
 .grid div#Lamsoor:hover, .grid div#Lamsoor:active {
-  background: #61bb46;
+  background: #80b23e;
 }
 
 .grid div#Lamsoor:hover h3, .grid div#Lamsoor:active h3 {
@@ -385,7 +385,7 @@ nav ul li a:hover {
 }
 
 .grid div#Lepelblad:hover, .grid div#Lepelblad:active {
-  background: #61bb46;
+  background: #80b23e;
 }
 
 .grid div#Lepelblad:hover h3, .grid div#Lepelblad:active h3 {
@@ -393,7 +393,7 @@ nav ul li a:hover {
 }
 
 #OverOns {
-  background: #61bb46;
+  background: #80b23e;
   color: white;
   text-align: center;
 }
@@ -407,6 +407,19 @@ nav ul li a:hover {
       justify-content: space-around;
 }
 
+#OverOns .container .right {
+  text-align: right;
+}
+
+#OverOns .container .profiel {
+  width: 20rem;
+  margin: 1em 0;
+}
+
+#OverOns .container .profiel img {
+  width: 100%;
+}
+
 @media (max-width: 700px) {
   #OverOns .container {
     -webkit-box-orient: vertical;
@@ -416,6 +429,9 @@ nav ul li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #OverOns .container .right {
+    text-align: left;
   }
   #OverOns .container .pargraaf {
     width: 90%;
