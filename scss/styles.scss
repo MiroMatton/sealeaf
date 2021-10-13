@@ -227,7 +227,7 @@ nav {
   display: none;
 }
 
-// product
+// producten
 
 .underline {
   text-decoration: none;
@@ -404,15 +404,30 @@ nav {
 
 #Gerechten {
   text-align: center;
+}
 
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    background: white;
-    div {
-      background: url(../img/insta.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+#instafeed {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    display: block;
+    position: relative;
+    width: 30%;
+    height: 0;
+    padding-top: 30%;
+    margin: 1em;
+
+    @media (max-width: 950px) {
+      width: 45%;
+      padding-top: 45%;
+    }
+
+    @media (max-width: 570px) {
+      width: 100%;
+      padding-top: 100%;
     }
   }
 }
