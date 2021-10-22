@@ -342,14 +342,21 @@
 <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 <script type="text/javascript">
 	var userFeed = new Instafeed({
-	get: 'wereldwegwijzer',
+	get: 'sealeafbiz',
 	target: "instafeed",
 	accessToken: 'IGQVJYdzZA5MWtBaWQxTW5JaDBhVWRkQi1BTFEzcUhCbEpwZAWMtejBJbGZAqXy1LMUtkd3RuZA3ZASNUlxb0E5d3h3bHY3TFhNdWJUWDRvWlRHYUJGNVJXRFBPNGxtakQ1V2NVd3ByaTJ3',
 	resolution: 'low_resolution',
 	template: '<a style="background:url({{image}}) no-repeat center center;background-size: cover" href="{{link}}" target="_blank"></a>',
 	sortBy: 'most-recent',
   orientation: 'square',
-	limit: 9
+	limit: 9,
+  filter: function(image) {
+    const hashtag = "#ziltbord";
+    var filtered = Object.values(image).filter(function (el) {
+      return el !== undefined;
+    });
+    return filtered[0].includes(hashtag)
+  }
 	});
 	userFeed.run();
 	</script>

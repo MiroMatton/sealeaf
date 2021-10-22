@@ -412,12 +412,22 @@ nav ul li a:hover {
 }
 
 #OverOns .container .profiel {
-  width: 20rem;
+  position: relative;
+  width: 12.5rem;
   margin: 1em 0;
 }
 
 #OverOns .container .profiel img {
   width: 100%;
+}
+
+#OverOns .container .profiel::after {
+  content: "Jan Bracke";
+  position: absolute;
+  top: 70%;
+  right: 25%;
+  text-align: right;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 700px) {
@@ -510,7 +520,7 @@ nav ul li a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: white;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   text-align: left;
   width: 97.5%;
@@ -530,7 +540,7 @@ div#Groot {
 }
 
 div#Plant {
-  background-image: url("../img/SeaLeaf-09856.jpg");
+  background-image: url("../img/plant.jpeg");
   background-size: cover;
 }
 
