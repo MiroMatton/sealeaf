@@ -1,199 +1,406 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sealeaf</title>
-    <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" href="scss/styles.css">
-<body>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="scss/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <header class="wrapper">
       <nav>
         <ul class="nav-menu">
-          <li class="nav-item"><a class="nav-link" data-section="Teelt" href="#Teelt">Teelt</a></li>
-          <li class="nav-item"><a class="nav-link" data-section="Producten" href="#Producten">Producten</a></li>
-          <li class="nav-item"><a class="nav-link" data-section="OverOns" href="#OverOns">Over ons</a></li>
-          <li class="nav-item"><a class="nav-link" data-section="Gerechten" href="#Gerechten">Gerechten</a></li>
-          <li class="nav-item"><a class="nav-link" data-section="Verpakking" href="#Verpakking">Verpakking</a></li>
-          <li class="nav-item"><a class="nav-link button" data-section="Contact" href="#Contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" data-section="Teelt" href="#Teelt">Teelt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-section="Producten" href="#Producten"
+              >Producten</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-section="OverOns" href="#OverOns"
+              >Over ons</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-section="Gerechten" href="#Gerechten"
+              >Gerechten</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-section="Verpakking" href="#Verpakking"
+              >Verpakking</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link button" data-section="Contact" href="#Contact"
+              >Contact</a
+            >
+          </li>
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-      </div>
+        </div>
       </nav>
     </header>
     <main>
       <section id="Home" class="wrapper">
-          <div class="container">
-            <div class="logo">
-              <img src="img/SeaLeaf_baseline.png" alt="logo">
-            </div>
-            <div class="title">
-              <h1 class="green">Zeegroenten</h1>
-              <h1 class="blue">Vers uit vertical farm</h1>
-              <p>
-                Zeekraal, Lamsoor, Oesterblad, .... Zilte groenten van de kust.
-                Alles kan beter en daarom bouwden we de eerste zilte vertical farm.
-                Heel het jaar door een verse zilte smaak die je keuken verrijkt.
-                Voor veggies, vis lovers en veeleisende vleeseters.
-              </p>
-            </div>
+        <div class="container">
+          <div class="logo">
+            <img src="img/SeaLeaf_baseline.png" alt="logo" />
           </div>
-          <div class="features">
-            <div>
-              <svg width="54" height="58" viewBox="0 0 54 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M52.7 9.2C48.7 3.8 44.2 0.699998 39.1 0.0999985C38.5 -1.52737e-06 37.9 0 37.2 0C32.2 0 28.3 2.3 26.6 3.5C24.9 2.3 21 0 16 0C15.4 0 14.8 -1.52737e-06 14.1 0.0999985C8.99999 0.699998 4.4 3.8 0.5 9.2L0 9.9L0.0999908 10.1C0.199991 10.3 1.49999 15.7 5.39999 21C7.39999 23.8 9.7 26 12.3 27.7V29.3C12.3 37.2 18.7 43.7 26.7 43.7C34.6 43.7 41.1 37.3 41.1 29.3V27.7C43.6 26 45.9 23.8 47.9 21C51.5 16 53 10.9 53.2 10.2L53.3 10L52.7 9.2ZM12.3 24.6C10.6 23.2 9 21.5 7.5 19.6C5.9 17.5 4.79999 15.3 4.09999 13.6C6.39999 14.8 9.3 15.7 12.3 16.3V24.6ZM38.9 26V29V29.3C38.9 36 33.4 41.5 26.7 41.5C20 41.5 14.5 36 14.5 29.3V29V26.1V16.6C19 17.4 23.4 17.6 25.7 17.6V32.5H27.8V17.7C30.1 17.7 34.4 17.4 39 16.7V26H38.9ZM41 24.5V16.3C43.9 15.7 46.8 14.8 49.1 13.6C47.8 16.6 45.2 21.1 41 24.5ZM27.6 15.1C27.4 15.1 27.2 15.1 27 15.1H26.2C26 15.1 25.8 15.1 25.6 15.1C20.3 15.1 7.4 13.8 3.2 9.9C6.6 5.6 10.3 3.2 14.4 2.7C14.9 2.6 15.4 2.6 15.9 2.6C20.3 2.6 23.8 4.8 25.2 5.7C25.5 5.9 25.8 6.1 26 6.4L26.5 7L27 6.4C27.2 6.1 27.5 5.9 27.8 5.7C29.1 4.8 32.6 2.6 37 2.6C37.5 2.6 38 2.6 38.5 2.7C42.6 3.2 46.3 5.6 49.7 9.9C45.8 13.8 33 15.1 27.6 15.1Z" fill="url(#paint0_linear)"/>
-                <path d="M22.4 38.6C23.2837 38.6 24 37.8837 24 37C24 36.1163 23.2837 35.4 22.4 35.4C21.5164 35.4 20.8 36.1163 20.8 37C20.8 37.8837 21.5164 38.6 22.4 38.6Z" fill="url(#paint1_linear)"/>
-                <path d="M34.8 49.5C35.6837 49.5 36.4 48.7837 36.4 47.9C36.4 47.0163 35.6837 46.3 34.8 46.3C33.9164 46.3 33.2 47.0163 33.2 47.9C33.2 48.7837 33.9164 49.5 34.8 49.5Z" fill="url(#paint2_linear)"/>
-                <path d="M19 49.3C19.8837 49.3 20.6 48.5837 20.6 47.7C20.6 46.8163 19.8837 46.1 19 46.1C18.1164 46.1 17.4 46.8163 17.4 47.7C17.4 48.5837 18.1164 49.3 19 49.3Z" fill="url(#paint3_linear)"/>
-                <path d="M32.3 57.6C33.1837 57.6 33.9 56.8836 33.9 56C33.9 55.1163 33.1837 54.4 32.3 54.4C31.4164 54.4 30.7 55.1163 30.7 56C30.7 56.8836 31.4164 57.6 32.3 57.6Z" fill="url(#paint4_linear)"/>
-                <path d="M27.3 52.1C28.1837 52.1 28.9 51.3837 28.9 50.5C28.9 49.6163 28.1837 48.9 27.3 48.9C26.4164 48.9 25.7 49.6163 25.7 50.5C25.7 51.3837 26.4164 52.1 27.3 52.1Z" fill="url(#paint5_linear)"/>
-                <defs>
-                <linearGradient id="paint0_linear" x1="0.1059" y1="21.8625" x2="53.2508" y2="21.8625" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear" x1="20.7334" y1="36.9726" x2="24.0031" y2="36.9726" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                <linearGradient id="paint2_linear" x1="33.1682" y1="47.9212" x2="36.4379" y2="47.9212" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                <linearGradient id="paint3_linear" x1="17.4141" y1="47.723" x2="20.6838" y2="47.723" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                <linearGradient id="paint4_linear" x1="30.6911" y1="56.0459" x2="33.9609" y2="56.0459" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                <linearGradient id="paint5_linear" x1="25.638" y1="50.4973" x2="28.9077" y2="50.4973" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                </defs>
-                </svg>                             
-              <p>Smaakvol zilt</p>
-            </div>
-            <div>
-              <svg width="51" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25.6091 26.5C30.2091 26.5 34.009 22.7 34.009 18.1C34.009 13.5 30.2091 9.7 25.6091 9.7C21.0091 9.7 17.209 13.5 17.209 18.1C17.209 22.7 20.9091 26.5 25.6091 26.5ZM25.6091 12.3C28.8091 12.3 31.409 14.9 31.409 18.1C31.409 21.3 28.8091 23.9 25.6091 23.9C22.4091 23.9 19.8091 21.3 19.8091 18.1C19.7091 14.9 22.3091 12.3 25.6091 12.3Z" fill="url(#paint0_linear)"/>
-                <path d="M43.409 38.4C43.209 37.9 42.709 37.6 42.209 37.6H34.709C34.809 37.5 34.909 37.4 34.909 37.2C40.609 28.6 43.509 22.1 43.509 18C43.509 8.1 35.409 0 25.509 0C15.609 0 7.50901 8.1 7.50901 18C7.50901 22.1 10.409 28.5 16.109 37.2C16.209 37.3 16.309 37.4 16.309 37.6H8.80902C8.30902 37.6 7.80902 37.9 7.60902 38.4L0.10902 55.2C-0.09098 55.6 0.00901082 56.1 0.209011 56.4C0.409011 56.8 0.809017 57 1.30902 57H49.609C50.009 57 50.409 56.8 50.709 56.4C50.909 56 51.009 55.6 50.809 55.2L43.409 38.4ZM10.109 18.1C10.109 9.6 17.009 2.7 25.509 2.7C34.009 2.7 40.909 9.6 40.909 18.1C40.909 21.6 38.109 27.7 32.809 35.8C29.909 40.2 27.009 44.1 25.509 46C24.009 44.1 21.109 40.2 18.209 35.8C12.909 27.8 10.109 21.6 10.109 18.1ZM3.30902 54.5L9.70901 40.3H18.109C21.509 45.2 24.509 48.9 24.509 49C24.709 49.3 25.109 49.5 25.509 49.5C25.909 49.5 26.309 49.3 26.509 49C26.509 49 29.509 45.2 32.909 40.3H41.309L47.609 54.5H3.30902Z" fill="url(#paint1_linear)"/>
-                <defs>
-                <linearGradient id="paint0_linear" x1="17.1599" y1="18.1141" x2="33.9615" y2="18.1141" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear" x1="0.069117" y1="28.5749" x2="50.9302" y2="28.5749" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                </defs>
-                </svg>                 
-              <p>Lokaal</p>
-            </div>
-            <div>
-              <svg width="52" height="60" viewBox="0 0 52 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M49.6 0.799999C49.4 0.299999 49 0 48.5 0C48 0 47.5 0.200001 47.3 0.700001C47.3 0.700001 44.8 5.5 34.9 11.3C29.4 14.5 26.4 19.5 26.8 24.6C27.1 27.9 28.8 30.6 31.4 32C30.1 35.3 29 38.7 28.2 42.2C27.2 39.7 25.7 37.4 23.8 35.5C23.9 34.9 24 34.2 23.9 33.5C23.6 30.6 22 23.8 12.8 23.6C6.19999 23.4 1.99999 21 1.89999 21C1.49999 20.8 1.00001 20.8 0.600006 21C0.200006 21.3 0 21.7 0 22.2C0.1 22.9 1.60001 38.6 13.2 40.5C14.1 40.6 14.9 40.7 15.7 40.7C17.5 40.7 19.1 40.3 20.5 39.6C21.3 39.2 22 38.6 22.6 37.9C25.2 40.8 26.9 44.7 26.9 48.8C26.5 52.1 26.2 55.4 26.2 58.7C26.2 59.4 26.8 59.9 27.4 59.9C28 59.9 28.6 59.3 28.6 58.7C28.6 49.7 30.3 40.9 33.5 32.7C34.5 33 36 33.3 37.7 33.3C41.4 33.3 46.1 31.8 49.5 25.3C54.7 15.7 49.8 1.4 49.6 0.799999ZM19.6 37.4C18 38.2 16.1 38.4 13.8 38C6.49999 36.8 3.9 28.3 3 24.1C5.1 24.9 8.49999 25.9 12.8 26C19.2 26.2 21.1 30 21.5 33.4C19.2 31.7 16.4 30.6 13.5 30.2C12.8 30.1 12.2 30.6 12.1 31.3C12 32 12.5 32.6 13.2 32.7C16.2 33.1 18.8 34.4 21.1 36.2C20.6 36.7 20.2 37.1 19.6 37.4ZM47.5 24.3C43.6 32 37.4 31.3 34.7 30.5C36.9 25.6 39.6 20.8 42.9 16.4C43.3 15.8 43.2 15.1 42.6 14.7C42 14.3 41.3 14.4 40.9 15C37.5 19.6 34.6 24.5 32.4 29.6C30.7 28.6 29.5 26.7 29.3 24.3C28.9 20.2 31.5 16.1 36.1 13.4C42.6 9.6 46.1 6.2 47.9 4C49.1 8.4 50.9 17.8 47.5 24.3Z" fill="url(#paint0_linear)"/>
-                <defs>
-                <linearGradient id="paint0_linear" x1="0.1324" y1="29.9828" x2="51.941" y2="29.9828" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                </defs>
-                </svg>                 
-                <p>Vers</p>
-            </div>
-            <div>
-              <svg width="71" height="61" viewBox="0 0 71 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M69.7 21.6L36.1 0.700001C36 0.700001 36 0.699998 35.9 0.599998C35.8 0.599998 35.7 0.5 35.6 0.5C35.5 0.5 35.4 0.5 35.4 0.5C35.3 0.5 35.2 0.5 35.2 0.5C35.1 0.5 35 0.599998 34.9 0.599998C34.8 0.599998 34.8 0.600001 34.7 0.700001L1.09996 21.6C0.49996 22 0.299997 22.8 0.699997 23.4C0.899997 23.8 1.39997 24 1.79997 24C1.99997 24 2.29998 23.9 2.49998 23.8L5.79997 21.7V59.5C5.79997 60.2 6.39996 60.8 7.09996 60.8H20.5H63.7C64.4 60.8 65 60.2 65 59.5V21.8L68.3 23.9C68.5 24 68.8 24.1 69 24.1C69.4 24.1 69.9 23.9 70.1 23.5C70.5 22.8 70.3 22 69.7 21.6ZM35.9 53.2C37.7 53.3 39.2 54 39.6 54.9C39.8 55.3 40.1 55.5 40.6 55.6C41 55.7 41.4 55.5 41.7 55.2C42.2 54.7 44.3 54.5 46.5 55.5C47.3 55.9 48.8 56.8 49.3 58.2H22C22.4 57.2 23.2 56.6 23.8 56.2C25.5 55.1 27.8 54.8 29.2 55.4C29.8 55.7 30.5 55.5 30.8 55C32 53.5 34.2 53.1 35.9 53.2ZM62.4 20.2V58.4H52C51.7 56.3 50.1 54.4 47.6 53.3C45.6 52.4 42.9 52 41.1 52.7C40.4 52 39.5 51.5 38.4 51.1C39.2 49 39.3 45.6 38 42.7C35.8 37.7 36.5 34.6 36.9 33.4C40.2 33.2 42.8 32.1 44.5 29.9C47.9 25.6 46.4 19 46.3 18.7C46.1 18 45.5 17.6 44.8 17.7C44.7 17.7 33.2 19.6 34.7 31.8C34.5 32.3 34.1 33.3 34 34.6C29.1 29.2 21.8 31.4 21.7 31.4C21.1 31.6 20.7 32.3 20.8 32.9C20.9 33.2 22.4 39.8 27.3 42.2C28.5 42.8 29.7 43.1 31.1 43.1C32.4 43.1 33.7 42.8 35.1 42.3C35.3 42.8 35.4 43.2 35.6 43.7C36.9 46.7 36.3 49.8 35.7 50.6C33.1 50.5 30.8 51.3 29.3 52.8C27.2 52.3 24.5 52.8 22.4 54.1C20.7 55.2 19.6 56.6 19.3 58.3H8.40001V20.2L35.4 3.4L62.4 20.2ZM44 20.5C44.2 22.4 44.3 25.8 42.4 28.2C41.3 29.6 39.5 30.4 37.2 30.7C36.8 23.7 41.6 21.3 44 20.5ZM34.2 39.8C32 40.6 30.1 40.6 28.5 39.8C25.8 38.5 24.4 35.3 23.8 33.6C26.2 33.3 31.6 33.4 34.2 39.8Z" fill="url(#paint0_linear)"/>
-                <defs>
-                <linearGradient id="paint0_linear" x1="0.519286" y1="30.7538" x2="70.2766" y2="30.7538" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                </defs>
-                </svg>  
-                <p>Seizoensonafhankelijk</p>
-              </div>
-            <div>
-              <svg width="34" height="50" viewBox="0 0 34 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 1.5L16.9 0L15.8 1.5C15.2 2.4 0 23.5 0 32.5C0 41.8 7.6 49.4 16.9 49.4C26.2 49.4 33.8 41.8 33.8 32.5C33.8 23.5 18.6 2.4 18 1.5ZM16.9 46.7C9 46.7 2.6 40.3 2.6 32.4C2.6 25.5 13.9 8.8 16.9 4.5C19.9 8.8 31.2 25.5 31.2 32.4C31.2 40.3 24.8 46.7 16.9 46.7Z" fill="url(#paint0_linear)"/>
-                <path d="M28.1 31.9C28 31.2 27.3 30.7 26.6 30.9C25.9 31 25.4 31.7 25.6 32.4C25.6 32.5 26.2 35.9 24.2 38.4C22.8 40.3 20.3 41.3 16.9 41.6C16.6 41.6 16.2 41.8 16 42C15.8 42.3 15.7 42.6 15.7 42.9C15.7 43.6 16.3 44.1 17 44.1H17.1C21.3 43.8 24.4 42.4 26.3 39.9C29 36.4 28.2 32.1 28.1 31.9Z" fill="url(#paint1_linear)"/>
-                <defs>
-                <linearGradient id="paint0_linear" x1="0.0594" y1="24.6702" x2="33.8285" y2="24.6702" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear" x1="15.6432" y1="37.4689" x2="28.2671" y2="37.4689" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1C95A6"/>
-                <stop offset="0.0707915" stop-color="#27989B"/>
-                <stop offset="0.354" stop-color="#4DA273"/>
-                <stop offset="0.613" stop-color="#69AA56"/>
-                <stop offset="0.8368" stop-color="#7AAE44"/>
-                <stop offset="1" stop-color="#80B03E"/>
-                </linearGradient>
-                </defs>
-                </svg>                
-              <p>Zuiver</p> 
-            </div>
+          <div class="title">
+            <h1 class="green">Zeegroenten</h1>
+            <h1 class="blue">Vers uit vertical farm</h1>
+            <p>
+              Zeekraal, Lamsoor, Oesterblad, .... Zilte groenten van de kust.
+              Alles kan beter en daarom bouwden we de eerste zilte vertical
+              farm. Heel het jaar door een verse zilte smaak die je keuken
+              verrijkt. Voor veggies, vis lovers en veeleisende vleeseters.
+            </p>
           </div>
+        </div>
+        <div class="features">
+          <div>
+            <svg
+              width="54"
+              height="58"
+              viewBox="0 0 54 58"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M52.7 9.2C48.7 3.8 44.2 0.699998 39.1 0.0999985C38.5 -1.52737e-06 37.9 0 37.2 0C32.2 0 28.3 2.3 26.6 3.5C24.9 2.3 21 0 16 0C15.4 0 14.8 -1.52737e-06 14.1 0.0999985C8.99999 0.699998 4.4 3.8 0.5 9.2L0 9.9L0.0999908 10.1C0.199991 10.3 1.49999 15.7 5.39999 21C7.39999 23.8 9.7 26 12.3 27.7V29.3C12.3 37.2 18.7 43.7 26.7 43.7C34.6 43.7 41.1 37.3 41.1 29.3V27.7C43.6 26 45.9 23.8 47.9 21C51.5 16 53 10.9 53.2 10.2L53.3 10L52.7 9.2ZM12.3 24.6C10.6 23.2 9 21.5 7.5 19.6C5.9 17.5 4.79999 15.3 4.09999 13.6C6.39999 14.8 9.3 15.7 12.3 16.3V24.6ZM38.9 26V29V29.3C38.9 36 33.4 41.5 26.7 41.5C20 41.5 14.5 36 14.5 29.3V29V26.1V16.6C19 17.4 23.4 17.6 25.7 17.6V32.5H27.8V17.7C30.1 17.7 34.4 17.4 39 16.7V26H38.9ZM41 24.5V16.3C43.9 15.7 46.8 14.8 49.1 13.6C47.8 16.6 45.2 21.1 41 24.5ZM27.6 15.1C27.4 15.1 27.2 15.1 27 15.1H26.2C26 15.1 25.8 15.1 25.6 15.1C20.3 15.1 7.4 13.8 3.2 9.9C6.6 5.6 10.3 3.2 14.4 2.7C14.9 2.6 15.4 2.6 15.9 2.6C20.3 2.6 23.8 4.8 25.2 5.7C25.5 5.9 25.8 6.1 26 6.4L26.5 7L27 6.4C27.2 6.1 27.5 5.9 27.8 5.7C29.1 4.8 32.6 2.6 37 2.6C37.5 2.6 38 2.6 38.5 2.7C42.6 3.2 46.3 5.6 49.7 9.9C45.8 13.8 33 15.1 27.6 15.1Z"
+                fill="url(#paint0_linear)"
+              />
+              <path
+                d="M22.4 38.6C23.2837 38.6 24 37.8837 24 37C24 36.1163 23.2837 35.4 22.4 35.4C21.5164 35.4 20.8 36.1163 20.8 37C20.8 37.8837 21.5164 38.6 22.4 38.6Z"
+                fill="url(#paint1_linear)"
+              />
+              <path
+                d="M34.8 49.5C35.6837 49.5 36.4 48.7837 36.4 47.9C36.4 47.0163 35.6837 46.3 34.8 46.3C33.9164 46.3 33.2 47.0163 33.2 47.9C33.2 48.7837 33.9164 49.5 34.8 49.5Z"
+                fill="url(#paint2_linear)"
+              />
+              <path
+                d="M19 49.3C19.8837 49.3 20.6 48.5837 20.6 47.7C20.6 46.8163 19.8837 46.1 19 46.1C18.1164 46.1 17.4 46.8163 17.4 47.7C17.4 48.5837 18.1164 49.3 19 49.3Z"
+                fill="url(#paint3_linear)"
+              />
+              <path
+                d="M32.3 57.6C33.1837 57.6 33.9 56.8836 33.9 56C33.9 55.1163 33.1837 54.4 32.3 54.4C31.4164 54.4 30.7 55.1163 30.7 56C30.7 56.8836 31.4164 57.6 32.3 57.6Z"
+                fill="url(#paint4_linear)"
+              />
+              <path
+                d="M27.3 52.1C28.1837 52.1 28.9 51.3837 28.9 50.5C28.9 49.6163 28.1837 48.9 27.3 48.9C26.4164 48.9 25.7 49.6163 25.7 50.5C25.7 51.3837 26.4164 52.1 27.3 52.1Z"
+                fill="url(#paint5_linear)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="0.1059"
+                  y1="21.8625"
+                  x2="53.2508"
+                  y2="21.8625"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear"
+                  x1="20.7334"
+                  y1="36.9726"
+                  x2="24.0031"
+                  y2="36.9726"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear"
+                  x1="33.1682"
+                  y1="47.9212"
+                  x2="36.4379"
+                  y2="47.9212"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear"
+                  x1="17.4141"
+                  y1="47.723"
+                  x2="20.6838"
+                  y2="47.723"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+                <linearGradient
+                  id="paint4_linear"
+                  x1="30.6911"
+                  y1="56.0459"
+                  x2="33.9609"
+                  y2="56.0459"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+                <linearGradient
+                  id="paint5_linear"
+                  x1="25.638"
+                  y1="50.4973"
+                  x2="28.9077"
+                  y2="50.4973"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>Smaakvol zilt</p>
+          </div>
+          <div>
+            <svg
+              width="51"
+              height="57"
+              viewBox="0 0 51 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.6091 26.5C30.2091 26.5 34.009 22.7 34.009 18.1C34.009 13.5 30.2091 9.7 25.6091 9.7C21.0091 9.7 17.209 13.5 17.209 18.1C17.209 22.7 20.9091 26.5 25.6091 26.5ZM25.6091 12.3C28.8091 12.3 31.409 14.9 31.409 18.1C31.409 21.3 28.8091 23.9 25.6091 23.9C22.4091 23.9 19.8091 21.3 19.8091 18.1C19.7091 14.9 22.3091 12.3 25.6091 12.3Z"
+                fill="url(#paint0_linear)"
+              />
+              <path
+                d="M43.409 38.4C43.209 37.9 42.709 37.6 42.209 37.6H34.709C34.809 37.5 34.909 37.4 34.909 37.2C40.609 28.6 43.509 22.1 43.509 18C43.509 8.1 35.409 0 25.509 0C15.609 0 7.50901 8.1 7.50901 18C7.50901 22.1 10.409 28.5 16.109 37.2C16.209 37.3 16.309 37.4 16.309 37.6H8.80902C8.30902 37.6 7.80902 37.9 7.60902 38.4L0.10902 55.2C-0.09098 55.6 0.00901082 56.1 0.209011 56.4C0.409011 56.8 0.809017 57 1.30902 57H49.609C50.009 57 50.409 56.8 50.709 56.4C50.909 56 51.009 55.6 50.809 55.2L43.409 38.4ZM10.109 18.1C10.109 9.6 17.009 2.7 25.509 2.7C34.009 2.7 40.909 9.6 40.909 18.1C40.909 21.6 38.109 27.7 32.809 35.8C29.909 40.2 27.009 44.1 25.509 46C24.009 44.1 21.109 40.2 18.209 35.8C12.909 27.8 10.109 21.6 10.109 18.1ZM3.30902 54.5L9.70901 40.3H18.109C21.509 45.2 24.509 48.9 24.509 49C24.709 49.3 25.109 49.5 25.509 49.5C25.909 49.5 26.309 49.3 26.509 49C26.509 49 29.509 45.2 32.909 40.3H41.309L47.609 54.5H3.30902Z"
+                fill="url(#paint1_linear)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="17.1599"
+                  y1="18.1141"
+                  x2="33.9615"
+                  y2="18.1141"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear"
+                  x1="0.069117"
+                  y1="28.5749"
+                  x2="50.9302"
+                  y2="28.5749"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>Lokaal</p>
+          </div>
+          <div>
+            <svg
+              width="52"
+              height="60"
+              viewBox="0 0 52 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M49.6 0.799999C49.4 0.299999 49 0 48.5 0C48 0 47.5 0.200001 47.3 0.700001C47.3 0.700001 44.8 5.5 34.9 11.3C29.4 14.5 26.4 19.5 26.8 24.6C27.1 27.9 28.8 30.6 31.4 32C30.1 35.3 29 38.7 28.2 42.2C27.2 39.7 25.7 37.4 23.8 35.5C23.9 34.9 24 34.2 23.9 33.5C23.6 30.6 22 23.8 12.8 23.6C6.19999 23.4 1.99999 21 1.89999 21C1.49999 20.8 1.00001 20.8 0.600006 21C0.200006 21.3 0 21.7 0 22.2C0.1 22.9 1.60001 38.6 13.2 40.5C14.1 40.6 14.9 40.7 15.7 40.7C17.5 40.7 19.1 40.3 20.5 39.6C21.3 39.2 22 38.6 22.6 37.9C25.2 40.8 26.9 44.7 26.9 48.8C26.5 52.1 26.2 55.4 26.2 58.7C26.2 59.4 26.8 59.9 27.4 59.9C28 59.9 28.6 59.3 28.6 58.7C28.6 49.7 30.3 40.9 33.5 32.7C34.5 33 36 33.3 37.7 33.3C41.4 33.3 46.1 31.8 49.5 25.3C54.7 15.7 49.8 1.4 49.6 0.799999ZM19.6 37.4C18 38.2 16.1 38.4 13.8 38C6.49999 36.8 3.9 28.3 3 24.1C5.1 24.9 8.49999 25.9 12.8 26C19.2 26.2 21.1 30 21.5 33.4C19.2 31.7 16.4 30.6 13.5 30.2C12.8 30.1 12.2 30.6 12.1 31.3C12 32 12.5 32.6 13.2 32.7C16.2 33.1 18.8 34.4 21.1 36.2C20.6 36.7 20.2 37.1 19.6 37.4ZM47.5 24.3C43.6 32 37.4 31.3 34.7 30.5C36.9 25.6 39.6 20.8 42.9 16.4C43.3 15.8 43.2 15.1 42.6 14.7C42 14.3 41.3 14.4 40.9 15C37.5 19.6 34.6 24.5 32.4 29.6C30.7 28.6 29.5 26.7 29.3 24.3C28.9 20.2 31.5 16.1 36.1 13.4C42.6 9.6 46.1 6.2 47.9 4C49.1 8.4 50.9 17.8 47.5 24.3Z"
+                fill="url(#paint0_linear)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="0.1324"
+                  y1="29.9828"
+                  x2="51.941"
+                  y2="29.9828"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>Vers</p>
+          </div>
+          <div>
+            <svg
+              width="71"
+              height="61"
+              viewBox="0 0 71 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M69.7 21.6L36.1 0.700001C36 0.700001 36 0.699998 35.9 0.599998C35.8 0.599998 35.7 0.5 35.6 0.5C35.5 0.5 35.4 0.5 35.4 0.5C35.3 0.5 35.2 0.5 35.2 0.5C35.1 0.5 35 0.599998 34.9 0.599998C34.8 0.599998 34.8 0.600001 34.7 0.700001L1.09996 21.6C0.49996 22 0.299997 22.8 0.699997 23.4C0.899997 23.8 1.39997 24 1.79997 24C1.99997 24 2.29998 23.9 2.49998 23.8L5.79997 21.7V59.5C5.79997 60.2 6.39996 60.8 7.09996 60.8H20.5H63.7C64.4 60.8 65 60.2 65 59.5V21.8L68.3 23.9C68.5 24 68.8 24.1 69 24.1C69.4 24.1 69.9 23.9 70.1 23.5C70.5 22.8 70.3 22 69.7 21.6ZM35.9 53.2C37.7 53.3 39.2 54 39.6 54.9C39.8 55.3 40.1 55.5 40.6 55.6C41 55.7 41.4 55.5 41.7 55.2C42.2 54.7 44.3 54.5 46.5 55.5C47.3 55.9 48.8 56.8 49.3 58.2H22C22.4 57.2 23.2 56.6 23.8 56.2C25.5 55.1 27.8 54.8 29.2 55.4C29.8 55.7 30.5 55.5 30.8 55C32 53.5 34.2 53.1 35.9 53.2ZM62.4 20.2V58.4H52C51.7 56.3 50.1 54.4 47.6 53.3C45.6 52.4 42.9 52 41.1 52.7C40.4 52 39.5 51.5 38.4 51.1C39.2 49 39.3 45.6 38 42.7C35.8 37.7 36.5 34.6 36.9 33.4C40.2 33.2 42.8 32.1 44.5 29.9C47.9 25.6 46.4 19 46.3 18.7C46.1 18 45.5 17.6 44.8 17.7C44.7 17.7 33.2 19.6 34.7 31.8C34.5 32.3 34.1 33.3 34 34.6C29.1 29.2 21.8 31.4 21.7 31.4C21.1 31.6 20.7 32.3 20.8 32.9C20.9 33.2 22.4 39.8 27.3 42.2C28.5 42.8 29.7 43.1 31.1 43.1C32.4 43.1 33.7 42.8 35.1 42.3C35.3 42.8 35.4 43.2 35.6 43.7C36.9 46.7 36.3 49.8 35.7 50.6C33.1 50.5 30.8 51.3 29.3 52.8C27.2 52.3 24.5 52.8 22.4 54.1C20.7 55.2 19.6 56.6 19.3 58.3H8.40001V20.2L35.4 3.4L62.4 20.2ZM44 20.5C44.2 22.4 44.3 25.8 42.4 28.2C41.3 29.6 39.5 30.4 37.2 30.7C36.8 23.7 41.6 21.3 44 20.5ZM34.2 39.8C32 40.6 30.1 40.6 28.5 39.8C25.8 38.5 24.4 35.3 23.8 33.6C26.2 33.3 31.6 33.4 34.2 39.8Z"
+                fill="url(#paint0_linear)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="0.519286"
+                  y1="30.7538"
+                  x2="70.2766"
+                  y2="30.7538"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>Seizoensonafhankelijk</p>
+          </div>
+          <div>
+            <svg
+              width="34"
+              height="50"
+              viewBox="0 0 34 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 1.5L16.9 0L15.8 1.5C15.2 2.4 0 23.5 0 32.5C0 41.8 7.6 49.4 16.9 49.4C26.2 49.4 33.8 41.8 33.8 32.5C33.8 23.5 18.6 2.4 18 1.5ZM16.9 46.7C9 46.7 2.6 40.3 2.6 32.4C2.6 25.5 13.9 8.8 16.9 4.5C19.9 8.8 31.2 25.5 31.2 32.4C31.2 40.3 24.8 46.7 16.9 46.7Z"
+                fill="url(#paint0_linear)"
+              />
+              <path
+                d="M28.1 31.9C28 31.2 27.3 30.7 26.6 30.9C25.9 31 25.4 31.7 25.6 32.4C25.6 32.5 26.2 35.9 24.2 38.4C22.8 40.3 20.3 41.3 16.9 41.6C16.6 41.6 16.2 41.8 16 42C15.8 42.3 15.7 42.6 15.7 42.9C15.7 43.6 16.3 44.1 17 44.1H17.1C21.3 43.8 24.4 42.4 26.3 39.9C29 36.4 28.2 32.1 28.1 31.9Z"
+                fill="url(#paint1_linear)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="0.0594"
+                  y1="24.6702"
+                  x2="33.8285"
+                  y2="24.6702"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear"
+                  x1="15.6432"
+                  y1="37.4689"
+                  x2="28.2671"
+                  y2="37.4689"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1C95A6" />
+                  <stop offset="0.0707915" stop-color="#27989B" />
+                  <stop offset="0.354" stop-color="#4DA273" />
+                  <stop offset="0.613" stop-color="#69AA56" />
+                  <stop offset="0.8368" stop-color="#7AAE44" />
+                  <stop offset="1" stop-color="#80B03E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>Zuiver</p>
+          </div>
+        </div>
       </section>
       <section id="Teelt">
-        <div class="gallery js-flickity" data-flickity='{"prevNextButtons": false, "autoPlay": 5000 }'>
-          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-8921.jpg);"><h3>Vrolijke plantjes opgegroeid in perfecte omstandigheden</h3></div>
-          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-09856.jpg);"><h3>Puur natuur, zonder bestrijdingsmiddelen en zo zuiver voor gebruik</h3></div>
-          <div class="gallery-cell" style="background-image: url(img/SeaLeaf-8959.jpg);"><h3>Omdat we geloven dat alles beter én lekkerder kan</h3></div>
-        </div>  
+        <div
+          class="gallery js-flickity"
+          data-flickity='{"prevNextButtons": false, "autoPlay": 5000 }'
+        >
+          <div
+            class="gallery-cell"
+            style="background-image: url(img/SeaLeaf-8921.jpg)"
+          ></div>
+          <div
+            class="gallery-cell"
+            style="background-image: url(img/SeaLeaf-09856.jpg)"
+          ></div>
+          <div
+            class="gallery-cell"
+            style="background-image: url(img/SeaLeaf-8959.jpg)"
+          ></div>
+        </div>
+        <div class="wrapper">
+          <div class="teeltInfo">
+            <div class="vl"></div>
+            <h3>Vertical Farm</h3>
+            <p>
+              Zaailingen groeien in eb- en vloed schalen onder perfecte
+              omstandigheden met het juiste licht, gezonde lucht en alle
+              voedingsstoffen die ze nodig hebben. Puur natuur, zonder
+              bestrijdingsmiddelen en zo zuiver voor gebruik Zeezout zorgt voor
+              de zilte toets.
+            </p>
+            <p>
+              Omdat we geloven dat alles beter én lekkerder kan, gebruiken we
+              een wetenschappelijk onderbouwd groeirecept dat geoptimaliseerd
+              werd in honderden tests.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="Producten" class="wrapper">
         <h2 class="underline">Producten</h2>
@@ -210,62 +417,75 @@
       </section>
       <section id="OverOns">
         <div class="wrapper">
-        <h2>Wij zijn er voor foodies en healthies</h2>
+          <h2>Wij zijn er voor foodies en healthies</h2>
           <div class="container">
             <div class="pargraaf right">
               <p>
-                Wij zijn er voor foodies en healthies,
-                voor fijnproevers en kwaliteitszoekers,
-                voor veggies, vis lovers en veeleisende vleeseters.
+                Wij zijn er voor foodies en healthies, voor fijnproevers en
+                kwaliteitszoekers, voor veggies, vis lovers en veeleisende
+                vleeseters.
               </p>
-              <br>
+              <br />
               <p>
-                Kortom, voor iedereen die graag 
-                smakelijk, gezond en gevarieerd eet.
-                Maar vooral voor wie 
-                een tikkeltje creativiteit lust 
-                en gewoon het beste wil.
-              </p>      
-              <br> 
+                Kortom, voor iedereen die graag smakelijk, gezond en gevarieerd
+                eet. Maar vooral voor wie een tikkeltje creativiteit lust en
+                gewoon het beste wil.
+              </p>
+              <br />
               <p>Net als wij.</p>
-              <br>
-              <p>Want als eerste in België telen wij zeegroenten op het land.</p>  
-              <br>
-              <p> Vrolijke plantjes die opgroeien in perfecte omstandigheden
-                met het juiste licht, gezonde lucht en alle voedingsstoffen die ze nodig hebben.
-                Puur natuur, zonder bestrijdingsmiddelen. Eetklaar zonder wassen.
+              <br />
+              <p>
+                Want als eerste in België telen wij zeegroenten op het land.
+              </p>
+              <br />
+              <p>
+                Vrolijke plantjes die opgroeien in perfecte omstandigheden met
+                het juiste licht, gezonde lucht en alle voedingsstoffen die ze
+                nodig hebben. Puur natuur, zonder bestrijdingsmiddelen. Eetklaar
+                zonder wassen.
               </p>
             </div>
             <div class="profiel">
-              <img src="./img/2ef7c01e-92ef-4750-844e-627c02fa5e2c.jpeg" alt="profiel foto">
+              <img
+                src="./img/2ef7c01e-92ef-4750-844e-627c02fa5e2c.jpeg"
+                alt="profiel foto"
+              />
             </div>
             <div class="pargraaf">
-              <p>Omdat we geloven dat alles beter én lekkerder kan, 
-                gebruiken we een wetenschappelijk onderbouwd groeirecept 
-                dat geoptimaliseerd werd in honderden tests.</p>
-              <br>
-              <p>Zo zorgen we het hele jaar door voor verse zilte groenten 
-                met dezelfde smaak en kwaliteit. In elk seizoen.
-                Boordevol vitaminen, mineralen en antioxidanten. 
-                Lekker lokaal. Recht uit de korte keten.
-              </p>   
-              <br>
-              <p>Een zee aan mogelijkheden voor originele gerechten met een zilte zeesmaak.
-              </p>  
-              <br>
-              <p>Een zoute toets die het smaakpalet 
-                van elke gastronoom verwent,
-                terwijl de creatieve kok glundert
-                van puur contentement.
+              <p>
+                Omdat we geloven dat alles beter én lekkerder kan, gebruiken we
+                een wetenschappelijk onderbouwd groeirecept dat geoptimaliseerd
+                werd in honderden tests.
               </p>
-              <br>
-              <p>SeaLeaf Creatief met zilte groenten<p>
+              <br />
+              <p>
+                Zo zorgen we het hele jaar door voor verse zilte groenten met
+                dezelfde smaak en kwaliteit. In elk seizoen. Boordevol
+                vitaminen, mineralen en antioxidanten. Lekker lokaal. Recht uit
+                de korte keten.
+              </p>
+              <br />
+              <p>
+                Een zee aan mogelijkheden voor originele gerechten met een zilte
+                zeesmaak.
+              </p>
+              <br />
+              <p>
+                Een zoute toets die het smaakpalet van elke gastronoom verwent,
+                terwijl de creatieve kok glundert van puur contentement.
+              </p>
+              <br />
+              <p>SeaLeaf Creatief met zilte groenten</p>
+              <p></p>
             </div>
           </div>
         </div>
       </section>
       <section id="Gerechten" class="wrapper">
         <h2 class="underline blue">Gerechten</h2>
+        <a href="https://www.instagram.com/sealeafbiz/"
+          ><i class="fab fa-instagram"></i
+        ></a>
         <div id="instafeed"></div>
       </section>
       <section id="Verpakking">
@@ -298,67 +518,233 @@
             <p>Geinteresseerd? contacteer ons</p>
           </div>
           <div class="form">
-            <form action="https://formsubmit.co/janbracke@sealeaf.biz" method="POST">
+            <form
+              action="https://formsubmit.co/janbracke@sealeaf.biz"
+              method="POST"
+            >
               <div id="gegevens">
-                <input type="hidden" name="_next" value="https://sealeaf.biz/#Contact">
-                <input type="hidden" name="_captcha" value="false">
-                <input id="name" name="name" type="text" placeholder="naam" required>
-                <input id="email" name="email" type="email" placeholder="E-mail" required>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://sealeaf.biz/#Contact"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="naam"
+                  required
+                />
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                />
               </div>
-              <textarea placeholder="message" name="msg" id="msg" rows="1s" required></textarea>
+              <textarea
+                placeholder="message"
+                name="msg"
+                id="msg"
+                rows="1s"
+                required
+              ></textarea>
               <button class="submit" type="submit">submit</button>
             </form>
           </div>
-        </div> 
+        </div>
       </section>
     </main>
     <footer class="wrapper">
       <div class="footerLogo">
-        <img src="img/SeaLeaf_.png" alt="logo">
+        <img src="img/SeaLeaf_.png" alt="logo" />
       </div>
       <div class="footerInfo">
         <div class="column">
           <h3>Sections</h3>
           <a class="nav-link" data-section="Teelt" href="#Teelt">Teelt</a>
-          <a class="nav-link" data-section="Producten" href="#Producten">Producten</a>
-          <a class="nav-link" data-section="OverOns" href="#OverOns">Over ons</a>
-          <a class="nav-link" data-section="Gerechten" href="#Gerechten">Gerechten</a>
-          <a class="nav-link" data-section="Verpakking" href="#Verpakking">Verpakking</a>
+          <a class="nav-link" data-section="Producten" href="#Producten"
+            >Producten</a
+          >
+          <a class="nav-link" data-section="OverOns" href="#OverOns"
+            >Over ons</a
+          >
+          <a class="nav-link" data-section="Gerechten" href="#Gerechten"
+            >Gerechten</a
+          >
+          <a class="nav-link" data-section="Verpakking" href="#Verpakking"
+            >Verpakking</a
+          >
         </div>
         <div class="column">
           <h3>Socials</h3>
-          <a href="/"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z" fill="url(#a)"/><path d="M15.8 36.2h14.6v48.3H15.8V36.2zm7.3-23.4c4.4 0 8.8 4.4 8.8 8.8s-4.4 8.8-8.8 8.8-8.8-4.4-8.8-8.8 4.4-8.8 8.8-8.8zM40.7 36.2h14.6v7.3c1.5-4.4 7.3-7.3 14.6-7.3 14.6 0 17.5 10.2 17.5 23.4v24.8H72.8V61.1c0-5.8 0-13.2-7.3-13.2s-8.8 5.8-8.8 11.7v24.9H42.2l-1.5-48.3z" fill="#fff"/><defs><linearGradient id="a" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse"><stop stop-color="#599FAA"/><stop offset=".079" stop-color="#5EA19D"/><stop offset=".363" stop-color="#6CA874"/><stop offset=".62" stop-color="#77AD57"/><stop offset=".841" stop-color="#7EB044"/><stop offset="1" stop-color="#80B13E"/></linearGradient></defs></svg> sealeafbiz</a> 
-          <a href="https://www.instagram.com/sealeafbiz/"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z" fill="url(#a)"/><path d="M64.1 86.6H33c-10.8 0-20.3-8.1-20.3-20.3V33.9c0-10.8 9.5-20.3 20.3-20.3h29.7c10.8 0 20.3 9.5 20.3 20.3v32.4c1.4 12.2-8.1 20.3-18.9 20.3zm0-5.4c4.1 0 8.1-1.4 10.8-4.1 2.7-2.7 4.1-6.8 4.1-10.8V33.9c0-4.1-1.4-8.1-4.1-10.8-4.1-2.7-6.8-4.1-10.8-4.1H33c-4.1 0-8.1 1.4-10.8 4.1-2.7 4.1-4.1 6.8-4.1 10.8v32.4c0 4.1 1.4 8.1 4.1 10.8 2.7 2.7 6.8 4.1 10.8 4.1h31.1z" fill="#fff"/><path d="M68.2 50.1c0 10.8-9.5 20.3-20.3 20.3s-20.3-9.5-20.3-20.3 9.5-20.3 20.3-20.3c12.2.1 20.3 9.5 20.3 20.3zM49.2 38c-6.8 0-13.5 5.4-13.5 13.5S41.1 65 49.2 65c6.8 0 13.5-5.4 13.5-13.5S56 38 49.2 38zM73.6 29.9c0 2.7-2.7 4.1-4.1 4.1-1.4 0-5.4-1.4-5.4-4.1 0-2.7 2.7-4.1 4.1-4.1 1.4 0 5.4 1.4 5.4 4.1z" fill="#fff"/><defs><linearGradient id="a" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse"><stop stop-color="#599FAA"/><stop offset=".079" stop-color="#5EA19D"/><stop offset=".363" stop-color="#6CA874"/><stop offset=".62" stop-color="#77AD57"/><stop offset=".841" stop-color="#7EB044"/><stop offset="1" stop-color="#80B13E"/></linearGradient></defs></svg> sealeafbiz</a>
+          <a href="/"
+            ><svg
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z"
+                fill="url(#a)"
+              />
+              <path
+                d="M15.8 36.2h14.6v48.3H15.8V36.2zm7.3-23.4c4.4 0 8.8 4.4 8.8 8.8s-4.4 8.8-8.8 8.8-8.8-4.4-8.8-8.8 4.4-8.8 8.8-8.8zM40.7 36.2h14.6v7.3c1.5-4.4 7.3-7.3 14.6-7.3 14.6 0 17.5 10.2 17.5 23.4v24.8H72.8V61.1c0-5.8 0-13.2-7.3-13.2s-8.8 5.8-8.8 11.7v24.9H42.2l-1.5-48.3z"
+                fill="#fff"
+              />
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="0"
+                  y1="50"
+                  x2="100"
+                  y2="50"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#599FAA" />
+                  <stop offset=".079" stop-color="#5EA19D" />
+                  <stop offset=".363" stop-color="#6CA874" />
+                  <stop offset=".62" stop-color="#77AD57" />
+                  <stop offset=".841" stop-color="#7EB044" />
+                  <stop offset="1" stop-color="#80B13E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            sealeafbiz</a
+          >
+          <a href="https://www.instagram.com/sealeafbiz/"
+            ><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z"
+                fill="url(#a)"
+              />
+              <path
+                d="M64.1 86.6H33c-10.8 0-20.3-8.1-20.3-20.3V33.9c0-10.8 9.5-20.3 20.3-20.3h29.7c10.8 0 20.3 9.5 20.3 20.3v32.4c1.4 12.2-8.1 20.3-18.9 20.3zm0-5.4c4.1 0 8.1-1.4 10.8-4.1 2.7-2.7 4.1-6.8 4.1-10.8V33.9c0-4.1-1.4-8.1-4.1-10.8-4.1-2.7-6.8-4.1-10.8-4.1H33c-4.1 0-8.1 1.4-10.8 4.1-2.7 4.1-4.1 6.8-4.1 10.8v32.4c0 4.1 1.4 8.1 4.1 10.8 2.7 2.7 6.8 4.1 10.8 4.1h31.1z"
+                fill="#fff"
+              />
+              <path
+                d="M68.2 50.1c0 10.8-9.5 20.3-20.3 20.3s-20.3-9.5-20.3-20.3 9.5-20.3 20.3-20.3c12.2.1 20.3 9.5 20.3 20.3zM49.2 38c-6.8 0-13.5 5.4-13.5 13.5S41.1 65 49.2 65c6.8 0 13.5-5.4 13.5-13.5S56 38 49.2 38zM73.6 29.9c0 2.7-2.7 4.1-4.1 4.1-1.4 0-5.4-1.4-5.4-4.1 0-2.7 2.7-4.1 4.1-4.1 1.4 0 5.4 1.4 5.4 4.1z"
+                fill="#fff"
+              />
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="0"
+                  y1="50"
+                  x2="100"
+                  y2="50"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#599FAA" />
+                  <stop offset=".079" stop-color="#5EA19D" />
+                  <stop offset=".363" stop-color="#6CA874" />
+                  <stop offset=".62" stop-color="#77AD57" />
+                  <stop offset=".841" stop-color="#7EB044" />
+                  <stop offset="1" stop-color="#80B13E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            sealeafbiz</a
+          >
         </div>
         <div class="column">
           <h3>Contact</h3>
-          <a href="mailto: janbracke@sealeaf.biz"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z" fill="url(#a)"/><path d="M68 87c-6.8 2.7-12.3 4.1-20.4 4.1-19.1 0-36.8-13.6-36.8-36.8 0-24.5 17.7-45 43.6-45 20.4 0 35.4 13.6 35.4 34.1 0 17.7-9.5 27.3-21.8 27.3-5.5 0-9.5-2.7-10.9-8.2-4.1 5.5-8.2 8.2-15 8.2-8.2 0-13.6-5.5-13.6-15 0-13.6 10.9-27.3 27.3-27.3 5.5 0 10.9 1.4 13.6 2.7l-2.7 21.8c-1.4 6.8 0 9.5 2.7 9.5 5.5 0 10.9-6.8 10.9-20.4 0-15-9.5-27.3-28.6-27.3-17.7 0-34.1 13.6-34.1 36.8 0 19.1 12.3 31.4 30 31.4 5.5 0 12.3-1.4 16.4-4.1l4 8.2zm-9.6-49.1h-4.1c-8.2 0-13.6 8.2-13.6 16.4 0 4.1 1.4 6.8 5.5 6.8s9.5-5.5 9.5-12.3l2.7-10.9z" fill="#fff"/><defs><linearGradient id="a" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse"><stop stop-color="#599FAA"/><stop offset=".079" stop-color="#5EA19D"/><stop offset=".363" stop-color="#6CA874"/><stop offset=".62" stop-color="#77AD57"/><stop offset=".841" stop-color="#7EB044"/><stop offset="1" stop-color="#80B13E"/></linearGradient></defs></svg>janbracke@sealeaf.biz</a> 
-          <a href="tel:+32 496 57 80 15"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z" fill="url(#a)"/><path d="M23.3 44.7s4 10.8 13.5 20.2l2.7 2.7 2.7 2.7c8 8.1 18.8 12.1 18.8 12.1 20.2 9.4 27-6.7 27-6.7 1.3-6.7-5.4-9.4-5.4-9.4l-9.4-4c-8.1-4-10.8 1.3-10.8 1.3L61 66.2c-4-1.3-10.8-4-14.8-6.7-4-4-6.7-10.8-8.1-16.2l2.7-1.3s4-2.7 1.3-9.4l-5.4-10.8s-2.7-6.7-8.1-4c.1-.1-16.1 8-5.3 26.9z" fill="#fff"/><defs><linearGradient id="a" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse"><stop stop-color="#599FAA"/><stop offset=".079" stop-color="#5EA19D"/><stop offset=".363" stop-color="#6CA874"/><stop offset=".62" stop-color="#77AD57"/><stop offset=".841" stop-color="#7EB044"/><stop offset="1" stop-color="#80B13E"/></linearGradient></defs></svg> +32 496 57 80 15</a>
+          <a href="mailto: janbracke@sealeaf.biz"
+            ><svg
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z"
+                fill="url(#a)"
+              />
+              <path
+                d="M68 87c-6.8 2.7-12.3 4.1-20.4 4.1-19.1 0-36.8-13.6-36.8-36.8 0-24.5 17.7-45 43.6-45 20.4 0 35.4 13.6 35.4 34.1 0 17.7-9.5 27.3-21.8 27.3-5.5 0-9.5-2.7-10.9-8.2-4.1 5.5-8.2 8.2-15 8.2-8.2 0-13.6-5.5-13.6-15 0-13.6 10.9-27.3 27.3-27.3 5.5 0 10.9 1.4 13.6 2.7l-2.7 21.8c-1.4 6.8 0 9.5 2.7 9.5 5.5 0 10.9-6.8 10.9-20.4 0-15-9.5-27.3-28.6-27.3-17.7 0-34.1 13.6-34.1 36.8 0 19.1 12.3 31.4 30 31.4 5.5 0 12.3-1.4 16.4-4.1l4 8.2zm-9.6-49.1h-4.1c-8.2 0-13.6 8.2-13.6 16.4 0 4.1 1.4 6.8 5.5 6.8s9.5-5.5 9.5-12.3l2.7-10.9z"
+                fill="#fff"
+              />
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="0"
+                  y1="50"
+                  x2="100"
+                  y2="50"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#599FAA" />
+                  <stop offset=".079" stop-color="#5EA19D" />
+                  <stop offset=".363" stop-color="#6CA874" />
+                  <stop offset=".62" stop-color="#77AD57" />
+                  <stop offset=".841" stop-color="#7EB044" />
+                  <stop offset="1" stop-color="#80B13E" />
+                </linearGradient>
+              </defs></svg
+            >janbracke@sealeaf.biz</a
+          >
+          <a href="tel:+32 496 57 80 15"
+            ><svg
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.9 0C8.1 0 0 8.1 0 18.9v62.2C0 91.9 8.1 100 18.9 100h62.2c10.8 0 18.9-8.1 18.9-18.9V18.9C100 8.1 91.9 0 81.1 0H18.9z"
+                fill="url(#a)"
+              />
+              <path
+                d="M23.3 44.7s4 10.8 13.5 20.2l2.7 2.7 2.7 2.7c8 8.1 18.8 12.1 18.8 12.1 20.2 9.4 27-6.7 27-6.7 1.3-6.7-5.4-9.4-5.4-9.4l-9.4-4c-8.1-4-10.8 1.3-10.8 1.3L61 66.2c-4-1.3-10.8-4-14.8-6.7-4-4-6.7-10.8-8.1-16.2l2.7-1.3s4-2.7 1.3-9.4l-5.4-10.8s-2.7-6.7-8.1-4c.1-.1-16.1 8-5.3 26.9z"
+                fill="#fff"
+              />
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="0"
+                  y1="50"
+                  x2="100"
+                  y2="50"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#599FAA" />
+                  <stop offset=".079" stop-color="#5EA19D" />
+                  <stop offset=".363" stop-color="#6CA874" />
+                  <stop offset=".62" stop-color="#77AD57" />
+                  <stop offset=".841" stop-color="#7EB044" />
+                  <stop offset="1" stop-color="#80B13E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            +32 496 57 80 15</a
+          >
         </div>
       </div>
-    </footer> 
-<script src="https://miromatton.github.io/sealeaf/main.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-<script type="text/javascript">
-	var userFeed = new Instafeed({
-	get: 'sealeafbiz',
-	target: "instafeed",
-	accessToken: 'IGQVJYdzZA5MWtBaWQxTW5JaDBhVWRkQi1BTFEzcUhCbEpwZAWMtejBJbGZAqXy1LMUtkd3RuZA3ZASNUlxb0E5d3h3bHY3TFhNdWJUWDRvWlRHYUJGNVJXRFBPNGxtakQ1V2NVd3ByaTJ3',
-	resolution: 'low_resolution',
-	template: '<a style="background:url({{image}}) no-repeat center center;background-size: cover" href="{{link}}" target="_blank"></a>',
-	sortBy: 'most-recent',
-  orientation: 'square',
-	limit: 9,
-  filter: function(image) {
-    const hashtag = "#ziltbord";
-    var filtered = Object.values(image).filter(function (el) {
-      return el !== undefined;
-    });
-    return filtered[0].includes(hashtag)
-  }
-	});
-	userFeed.run();
-	</script>
-</body>
+    </footer>
+    <script src="https://miromatton.github.io/sealeaf/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+        get: "sealeafbiz",
+        target: "instafeed",
+        accessToken:
+          "IGQVJYdzZA5MWtBaWQxTW5JaDBhVWRkQi1BTFEzcUhCbEpwZAWMtejBJbGZAqXy1LMUtkd3RuZA3ZASNUlxb0E5d3h3bHY3TFhNdWJUWDRvWlRHYUJGNVJXRFBPNGxtakQ1V2NVd3ByaTJ3",
+        resolution: "low_resolution",
+        template:
+          '<a style="background:url({{image}}) no-repeat center center;background-size: cover" href="{{link}}" target="_blank"></a>',
+        sortBy: "most-recent",
+        orientation: "square",
+        limit: 9,
+        filter: function (image) {
+          const hashtag = "#ziltbord";
+          var filtered = Object.values(image).filter(function (el) {
+            return el !== undefined;
+          });
+          return filtered[0].includes(hashtag);
+        },
+      });
+      userFeed.run();
+    </script>
+  </body>
 </html>

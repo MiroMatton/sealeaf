@@ -27,7 +27,7 @@ p {
 }
 
 section {
-  padding: 2em 0;
+  padding: 2.5em 0;
 }
 
 .wrapper {
@@ -203,24 +203,38 @@ nav {
 
 // teelt
 
+#Teelt {
+  text-align: center;
+}
+
+.teeltInfo {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    margin-top: 1em;
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0.5em;
+  }
+
+  .vl {
+    border-left: 5px solid $green;
+    height: 2em;
+  }
+}
+
 .gallery-cell {
   width: 100%;
-  height: 30vh;
+  height: 55vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: table;
-
-  h3 {
-    font-size: 2rem;
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-    color: white;
-
-    @media screen {
-    }
-  }
 }
 
 .flickity-page-dots {
@@ -414,6 +428,14 @@ nav {
 
 #Gerechten {
   text-align: center;
+
+  i {
+    font-size: 2rem;
+    color: #000;
+    &:hover {
+      color: $blue;
+    }
+  }
 }
 
 #instafeed {
