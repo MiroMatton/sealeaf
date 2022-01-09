@@ -361,6 +361,81 @@ nav {
       }
     }
   }
+
+  div#Zeebanaantjes {
+    background: url(../img/DSC01609.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover,
+    &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
+
+  div#Zeevenkel {
+    background: url(../img/DSC01610.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover,
+    &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
+
+  div#Zeekraalzout {
+    background: url(../img/DSC01614.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover,
+    &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
+
+  div#Zeekraal2 {
+    background: url(../img/DSC01315.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover,
+    &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
+
+  div#Lamsoor2 {
+    background: url(../img/DSC01611.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover,
+    &:active {
+      background: $green;
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 // over ons
