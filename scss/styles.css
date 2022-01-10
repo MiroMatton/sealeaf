@@ -337,8 +337,8 @@ nav ul li a:hover {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5em;
   padding: 2.5em;
   background: rgba(97, 187, 70, 0.2);
@@ -372,7 +372,7 @@ nav ul li a:hover {
 }
 
 .grid div#Zeekraal {
-  background: url(../img/SeaLeaf-09969.jpg);
+  background: url(../img/DSC01315.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -387,7 +387,7 @@ nav ul li a:hover {
 }
 
 .grid div#Lamsoor {
-  background: url(../img/SeaLeaf-09962.jpg);
+  background: url(../img/DSC01611.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

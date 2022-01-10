@@ -287,7 +287,7 @@ nav {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5em;
   padding: 2.5em;
   background: $lightGreen;
@@ -318,7 +318,7 @@ nav {
     }
   }
   div#Zeekraal {
-    background: url(../img/SeaLeaf-09969.jpg);
+    background: url(../img/DSC01315.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,7 +333,7 @@ nav {
   }
 
   div#Lamsoor {
-    background: url(../img/SeaLeaf-09962.jpg);
+    background: url(../img/DSC01611.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
